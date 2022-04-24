@@ -36,6 +36,10 @@ a{
     color: #333333;
 }
 
+nav a:hover{
+    color: black;
+    font-size: large;
+}
 
 .grid-container{
     display: grid;
@@ -74,15 +78,37 @@ a{
     justify-content: space-around;
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-areas:"destacado1 destacado2 destacado3 destacado4"
+    grid-template-areas:"destacado1 destacado2 destacado3 destacado4";
+    animation: fadeIn 2s;
 
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 .grid-destacados-1{
     justify-content: space-around;
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
-    grid-template-areas: "producto1 producto2 producto3 producto4"
+    grid-template-areas: "producto1 producto2 producto3 producto4";
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 
@@ -91,7 +117,19 @@ a{
     display: grid;
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-areas: "precio1 precio2 precio3 precio4";
+    animation: fadeIn 2s;
 }
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 
 .destacado1{
     grid-area: destacado1;
@@ -193,13 +231,62 @@ h1{
     text-align: center;
 }
 
+h1{
+    text-align: center;
+    animation-name: animacion;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes animacion {
+    10%{
+        font-size: 35px;
+    }
+
+}
+
 .nosotros{
     text-align: center;
     color: #333333;
     font-weight: bold;
-
+    animation: fadeIn 4s;
 }
 
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion{
+    background-color: floralwhite;
+}
+
+.grid-nosotros{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
 
 /*Contacto
 
@@ -303,20 +390,7 @@ h1{
     color: #333333
 }
 
-.mapa{
-    display: flex;
-    justify-content: center;
-}
 
-.ubicacion{
-    background-color: floralwhite;
-}
-
-.grid-nosotros{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
 
 @media screen and (max-width:500px){
 
