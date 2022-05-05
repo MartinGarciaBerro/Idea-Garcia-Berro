@@ -1,0 +1,19 @@
+.nosotros{
+    font-family: $letras;
+    text-align: center;
+    color: $colorletras;
+    font-weight: bold;
+    animation: fadeIn 7s;
+    .animacion1{
+        animation: fadeIn 2s;
+    }
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion{
+    background-color: $fondo;
+}

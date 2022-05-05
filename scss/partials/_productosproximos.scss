@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    animation-name: animacion;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+.espacio-medio{
+    margin-top: 30px;
+}
+@keyframes animacion {
+    10%{
+        font-size: 35px;
+    }
+
+}
+.grid-destacados-1 {
+    font-size: smaller;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-areas: "producto1 producto2 producto3 producto4";
+    animation: fadeIn 2s;
+    .producto1 {
+        grid-area: producto1;
+    }
+    
+    .producto2 {
+        grid-area: producto2;
+    }
+    
+    .producto3 {
+        grid-area: producto3;
+    }
+    
+    .producto4 {
+        grid-area: producto4;
+    }
+    
+}
+.grid-precios-1 {
+    font-weight: bolder;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-areas: "precio1 precio2 precio3 precio4";
+    animation: fadeIn 2s;
+    .precio1 {
+        grid-area: precio1;
+    }
+    
+    .precio2 {
+        grid-area: precio2;
+    }
+    
+    .precio3 {
+        grid-area: precio3;
+    }
+    
+    .precio4 {
+        grid-area: precio4;
+    }
+}

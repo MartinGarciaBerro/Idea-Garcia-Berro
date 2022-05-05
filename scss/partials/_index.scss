@@ -1,0 +1,66 @@
+.grid-destacados {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-areas: "destacado1 destacado2 destacado3 destacado4";
+    animation: fadeIn 2s;
+    .destacado1 {
+        grid-area: destacado1;
+    }
+    
+    .destacado2 {
+        grid-area: destacado2;
+    }
+    
+    .destacado3 {
+        grid-area: destacado3;
+    }
+    
+    .destacado4 {
+        grid-area: destacado4;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-weight: bolder;
+    text-align: center;
+    color: $colorletras;
+    background-color: $fondo;
+}
+
+.p {
+    font-size: 21px;
+    justify-content: center;
+
+    p {
+        padding-right: 270px;
+        padding-left: 270px;
+        margin: 0px 0px 31.5px;
+        display: flex;
+    }
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+.espacio-grande {
+    margin-top: 60px;
+}
+
+
+
+

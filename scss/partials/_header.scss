@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    background-color:$fondo;
+    font-family: $letras;
+    color: $colorletras; 
+}
+
+header{
+    nav{
+        ul{
+            li{
+                a{
+                    color: $colorletras;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    &:hover{
+                        color:$negro;
+                        font-size: large;
+                    } 
+            }
+        }
+    } 
+    }
+
+}
+

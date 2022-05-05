@@ -1,0 +1,206 @@
+@media screen and (max-width:500px) {
+
+    h1 {
+        font-size: x-large;
+    }
+
+    .p {
+        font-size: xx-small;
+        justify-content: center;
+
+        p {
+            padding-right: 50px;
+            padding-left: 50px;
+            display: flex;
+        }
+    }
+
+    .grid-destacados {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 95px 95px 95px 95px;
+        grid-template-areas: "destacado1 destacado2 destacado3 destacado4";
+
+    }
+
+    .destacado1 {
+        grid-area: destacado1;
+    }
+
+    .destacado2 {
+        grid-area: destacado2;
+    }
+
+    .destacado3 {
+        grid-area: destacado3;
+    }
+
+    .destacado4 {
+        grid-area: destacado4;
+    }
+
+    .grid-destacados-1 {
+        font-size: x-small;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-areas: "producto1 producto2 producto3 producto4 "
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .grid-precios-1 {
+        font-size: x-small;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-areas: "precio1 precio2 precio3 precio4";
+    }
+
+    .precio1 {
+        grid-area: precio1;
+    }
+
+    .precio2 {
+        grid-area: precio2;
+    }
+
+    .precio3 {
+        grid-area: precio3;
+    }
+
+    .precio4 {
+        grid-area: precio4;
+    }
+
+    .form {
+        background-color: #fff;
+        margin: auto;
+        width: 90%;
+        max-width: 200px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px $negro;
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:900px) {
+    .p {
+        font-size: small;
+        justify-content: center;
+
+        p {
+            padding-right: 100px;
+            padding-left: 100px;
+            display: flex;
+        }
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .grid-destacados {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-areas: "destacado1 destacado2 destacado3 destacado4";
+
+    }
+
+    .destacado1 {
+        grid-area: destacado1;
+    }
+
+    .destacado2 {
+        grid-area: destacado2;
+    }
+
+    .destacado3 {
+        grid-area: destacado3;
+    }
+
+    .destacado4 {
+        grid-area: destacado4;
+    }
+
+    .grid-destacados-1 {
+        font-size: x-small;
+        display: grid;
+        grid-template-columns: 90px 90px 90px 90px;
+        grid-template-areas: "producto1 producto2 producto3 producto4 "
+    }
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .grid-precios-1 {
+        font-size: x-small;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-areas: "precio1 precio2 precio3 precio4";
+    }
+
+    .precio1 {
+        grid-area: precio1;
+    }
+
+    .precio2 {
+        grid-area: precio2;
+    }
+
+    .precio3 {
+        grid-area: precio3;
+    }
+
+    .precio4 {
+        grid-area: precio4;
+    }
+
+    .form {
+
+        background-color: #fff;
+        margin: auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px $negro;
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+}
