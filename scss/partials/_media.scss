@@ -6,7 +6,7 @@
 
     .p {
         font-size: xx-small;
-        justify-content: center;
+        justify-content: $centrado;
 
         p {
             padding-right: 50px;
@@ -16,7 +16,7 @@
     }
 
     .grid-destacados {
-        align-items: center;
+        align-items: $centrado;
         display: grid;
         grid-template-columns: 95px 95px 95px 95px;
         grid-template-areas: "destacado1 destacado2 destacado3 destacado4";

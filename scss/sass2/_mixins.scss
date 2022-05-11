@@ -1,0 +1,24 @@
+@import "../variables/variables";
+
+@mixin flexibilizar-central{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin fuentes {
+    font-family: $letras;
+}
+
+@mixin estilos-de-ancla {
+    text-decoration: none;
+    font-family: $letras;
+    color: $colorletras;
+    font-weight: $negrita;
+}
+
+@mixin centrado-fondo-color {
+    text-align: $centrado;
+    color: $colorletras;
+    background-color: $fondo;
+    font-family: $letras;
+}

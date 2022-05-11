@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:wght@200&display=swap");
+.header-footer, header, footer {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  background-color: floralwhite; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -8,17 +13,19 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-  background-color: floralwhite;
-  font-family: "Poppins", sans-serif;
-  color: #333333; }
-
-header nav ul li a {
+  text-align: center;
   color: #333333;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif; }
-  header nav ul li a:hover {
-    color: black;
-    font-size: large; }
+  background-color: floralwhite;
+  font-family: "Poppins", sans-serif; }
+
+header nav {
+  display: flex;
+  justify-content: space-between; }
+  header nav a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-weight: bold; }
 
 .grid-destacados {
   justify-content: space-around;
@@ -45,7 +52,8 @@ h2 {
   font-weight: bolder;
   text-align: center;
   color: #333333;
-  background-color: floralwhite; }
+  background-color: floralwhite;
+  font-family: "Poppins", sans-serif; }
 
 .p {
   font-size: 21px;
@@ -64,17 +72,8 @@ h2 {
   margin-top: 60px; }
 
 footer {
-  font-family: "Poppins", sans-serif;
   position: relative;
   bottom: 0; }
-
-.pie {
-  color: #333333; }
-
-.pie-contacto {
-  position: absolute;
-  bottom: 0;
-  color: #333333; }
 
 h1 {
   text-align: center;
@@ -122,10 +121,10 @@ h1 {
     grid-area: precio4; }
 
 .nosotros {
-  font-family: "Poppins", sans-serif;
   text-align: center;
   color: #333333;
-  font-weight: bold;
+  background-color: floralwhite;
+  font-family: "Poppins", sans-serif;
   animation: fadeIn 7s; }
   .nosotros .animacion1 {
     animation: fadeIn 2s; }
@@ -181,39 +180,35 @@ form {
   transform: translateY(-12px) scale(0.7);
   transform-origin: left top;
   color: black; }
-
-.form-label {
-  color: var(--color);
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 5px;
-  transform: translateY(10px);
-  transition: transform .5s, color .3s; }
-
-.form-submit {
-  background: #333333;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: .8em 0;
-  border: none;
-  border-radius: .5em; }
-
-.form-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #333333;
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform .4s; }
-
-.form-input:focus ~ .form-line, .form-input:not(:placeholder-shown) ~ .form-line {
-  transform: scale(1); }
+  .form-input:focus + .form-label .form-label, .form-input:not(:placeholder-shown) + .form-label .form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s; }
+  .form-input:focus + .form-label .form-submit, .form-input:not(:placeholder-shown) + .form-label .form-submit {
+    background: #333333;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em; }
+  .form-input:focus + .form-label .form-line, .form-input:not(:placeholder-shown) + .form-label .form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s; }
+  .form-input:focus + .form-label .form-input:focus ~ .form-line, .form-input:focus + .form-label .form-input:not(:placeholder-shown) ~ .form-line, .form-input:not(:placeholder-shown) + .form-label .form-input:focus ~ .form-line, .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) ~ .form-line {
+    transform: scale(1); }
 
 @media screen and (max-width: 500px) {
   h1 {
@@ -337,3 +332,8 @@ form {
     text-align: center; }
   .form-title {
     font-size: 1.8rem; } }
+
+.header-footer, header, footer {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  background-color: floralwhite; }

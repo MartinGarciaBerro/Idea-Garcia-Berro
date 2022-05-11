@@ -1,8 +1,5 @@
 .nosotros{
-    font-family: $letras;
-    text-align: center;
-    color: $colorletras;
-    font-weight: bold;
+@include centrado-fondo-color;
     animation: fadeIn 7s;
     .animacion1{
         animation: fadeIn 2s;
@@ -11,7 +8,7 @@
 
 .mapa{
     display: flex;
-    justify-content: center;
+    justify-content: $centrado;
 }
 
 .ubicacion{

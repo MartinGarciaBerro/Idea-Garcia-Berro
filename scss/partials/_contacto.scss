@@ -1,3 +1,5 @@
+@import "../variables/variables";
+
 form{
     background-color: #fff;
     margin: auto;
@@ -6,7 +8,7 @@ form{
     padding: 4.5em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px $negro;
-    text-align: center;
+    text-align: $centrado;
 }
 
 .form-title{
@@ -41,13 +43,12 @@ form{
 }
 
 .form-input:not(:placeholder-shown){
-    color: black;
+    color: $negro;
 }
 .form-input:focus + .form-label,.form-input:not(:placeholder-shown) + .form-label{
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
-    color: black;
-}
+    color: $negro;
 
 .form-label{
     color: var(--color);
@@ -60,7 +61,7 @@ form{
 }
 
 .form-submit{
-    background: #333333;
+    background: $colorletras;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -84,4 +85,4 @@ form{
 .form-input:focus ~ .form-line,.form-input:not(:placeholder-shown) ~ .form-line{
     transform: scale(1);
 }
-
+}

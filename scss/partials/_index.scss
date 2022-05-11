@@ -35,14 +35,12 @@
 
 h2 {
     font-weight: bolder;
-    text-align: center;
-    color: $colorletras;
-    background-color: $fondo;
+    @include centrado-fondo-color;
 }
 
 .p {
     font-size: 21px;
-    justify-content: center;
+    justify-content: $centrado;
 
     p {
         padding-right: 270px;
@@ -54,7 +52,7 @@ h2 {
 
 .boton {
     display: flex;
-    justify-content: center;
+    justify-content: $centrado;
 }
 
 .espacio-grande {

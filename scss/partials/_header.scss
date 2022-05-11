@@ -1,4 +1,6 @@
-
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../variables/variables";
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:wght@200&display=swap');
 *{
     padding: 0;
@@ -11,27 +13,15 @@ body {
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
-    background-color:$fondo;
-    font-family: $letras;
-    color: $colorletras; 
+    @include centrado-fondo-color;
 }
 
 header{
+    @extend .header-footer;
     nav{
-        ul{
-            li{
-                a{
-                    color: $colorletras;
-                    text-decoration: none;
-                    font-family: 'Poppins', sans-serif;
-                    &:hover{
-                        color:$negro;
-                        font-size: large;
-                    } 
-            }
+        @include flexibilizar-central;
+        a{
+            @include estilos-de-ancla;
         }
-    } 
     }
-
 }
-
