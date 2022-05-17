@@ -14,7 +14,10 @@
             display: flex;
         }
     }
-
+    .cartas{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
     .grid-destacados {
         align-items: $centrado;
         display: grid;
@@ -117,7 +120,10 @@
     h1 {
         font-size: xx-large;
     }
-
+    .cartas{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     .grid-destacados {
         display: grid;
         grid-template-columns: 150px 150px 150px 150px;
