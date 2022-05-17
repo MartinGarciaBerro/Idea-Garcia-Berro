@@ -18,9 +18,8 @@ body {
   background-color: floralwhite;
   font-family: "Poppins", sans-serif; }
 
-header nav {
-  display: flex;
-  justify-content: space-between; }
+
+
   header nav a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
